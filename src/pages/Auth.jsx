@@ -3,6 +3,7 @@ import { Box, Tab, Tabs } from '@mui/material';
 
 import BackgroundImages from "../assets/images/background-auth.png";
 import Login from '../components/Login';
+import Registration from '../components/Registration';
 
 
 function CustomTabPanel(props) {
@@ -42,10 +43,10 @@ const Auth = () => {
     };
 
     return (
-        <Box sx={{ overflowY: "hidden", display: "flex", columnGap: "300px" }}>
+        <Box sx={{ overflowY: "hidden", display: "flex", columnGap: "200px" }}>
             <img src={BackgroundImages} alt="" />
             <Box>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider', mt: 20 }}>
+                <Box sx={{ borderBottom: 1, borderColor: 'divider', mt: 20, width:"350px", display:"flex", justifyContent:"center"}}>
                     <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                         <Tab label="Войти" {...a11yProps(0)} />
                         <Tab label="Регистрация" {...a11yProps(1)} />
@@ -55,7 +56,7 @@ const Auth = () => {
                     <Login/>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
-                   Регистрация
+                   <Registration/>
                 </CustomTabPanel>
             </Box>
         </Box>
