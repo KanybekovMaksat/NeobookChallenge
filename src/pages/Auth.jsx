@@ -1,8 +1,16 @@
 import React from 'react'
+import Box from '@mui/material/Box';
+
+import BackgroundImages from "../assets/images/background-auth.png";
 
 const Auth = () => {
   return (
-    <div>Auth</div>
+    <>
+        <img src={BackgroundImages} alt="" />
+        <div className="auth-content">
+            
+        </div>
+    </>
   )
 }
 
