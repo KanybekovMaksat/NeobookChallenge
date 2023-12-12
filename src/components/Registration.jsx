@@ -51,6 +51,7 @@ export default function Registration() {
                         sx={{ mt: 3 }}
                         key={index}
                         label={field.label}
+                        variant='standard'
                         type={field.type || 'text'}
                     />
                 ))}
